@@ -90,6 +90,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
     * `heroku open` - to open the app created in browser
     * Install `express` npm package to run 
     * Move `@angular/cli`, `@angular-compiler/cli` and `typescript` dependencies from devDependencies to dependencies
+    * Add `"postinstall": "ng build --prod"` script in the scripts section of package.json
+    * Update `"start": "node server.js"` script in the scripts section of package.json
+    * git add . - To add the changes in heroku remote
+    * git commit -m "Commit message" - to commit these changes
+    * git remote - to check if we are on heroku remote
+    * git push heroku master - to push and deploy the code on heroku remote master branch
+    * Optionally if you encounter any deployment issues in the baove steps, add `engines` property in package.json to specify to heroku as to which node and npm version on which this app works with.
 
 
 
